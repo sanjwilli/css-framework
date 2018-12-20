@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Testing Framwork</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css-framework.css">
+	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="css-framework.js"></script>
+</head>
+<body>
+
+	<h1>Testing Headings...</h1>
+	<h2>Testing Headings...</h2>
+	<h3>Testing Headings...</h3>
+	<h4>Testing Headings...</h4>
+	<h5>Testing Headings...</h5>
+	<h6>Testing Headings...</h6>
+
+	<p>I am writing a paragraph to test to see how they look together with the different headings...</p>
+
+	<h2> Image Style </h2>
+
+	<img src="http://placehold.it/50x50" alt="" class="tiny avatar image">
+
+	<h2> Button Style </h2>
+
+	<div class="two red buttons">
+		<button class="button">Send Now</button>
+		<button class="button">Download</button>
+	</div>
+	
+
+	<button class="facebook button">Facebook</button>
+	<button class="twitter button">Twitter</button>
+	<button class="instagram button">Instagram</button>
+
+	<button class="black button">Black</button>
+	<button class="grey button">Grey</button>
+
+	<h2>Dropdown Menu</h2>
+
+	<!-- Dropdown one -->
+
+	<div class="dropdown">
+		<div class="text">File</div>
+		<i class="fas fa-caret-down dropdown icon"></i>
+		<div class="menu">
+
+			<div class="item">New</div>
+
+			<div class="item">
+				<span class="description">ctrl + o</span>
+				Open...
+			</div>
+
+			<div class="item">
+				<span class="description">ctrl + s</span>
+				Save as...
+			</div>
+
+			<div class="item">
+				<span class="description">ctrl + r</span>
+				Rename
+			</div>
+
+			<div class="item">Make a copy</div>
+
+			<div class="item">
+				<i class="fas fa-folder"></i>
+				Move to folder
+			</div>
+
+			<div class="item">
+				<i class="fas fa-trash"></i>
+				Move to trash
+			</div>
+
+			<div class="divider"></div>
+
+			<div class="item">Download As...</div>
+
+			<div class="item">
+				<i class="fas fa-caret-right dropdown icon"></i>
+				Publish To Web
+				<div class="menu">
+					<div class="item">Google Docs</div>
+					<div class="item">Google Drive</div>
+					<div class="item">Dropbox</div>
+					<div class="item">Adobe Creative Cloud</div>
+					<div class="item">Private FTP</div>
+					<div class="item">Another Service...</div>
+				</div>
+			</div>
+
+			<div class="item">E-mail Collaborators</div>
+		</div>
+	</div>
+
+	<!-- Dropdown Two -->
+
+	<div class="selection dropdown">
+		<input type="hidden" name="gender">
+		<i class="fas fa-caret-down dropdown icon"></i>
+		<div class="default text">Gender</div>
+		<div class="menu">
+			<div class="item" data-value="Male">Male</div>
+			<div class="item" data-value="Female">Female</div>
+		</div>
+	</div>
+
+	<!-- Dropdown Three -->
+
+	<div class="dropdown selection">
+		<select>
+			<option value="">Gender</option>
+			<option value="Male">Male</option>
+			<option value="Female">Female</option>
+			<
+		</select>
+		<i class="fas fa-caret-down dropdown icon"></i>
+		<div class="default text">Gender</div>
+		<div class="menu transition hidden" tabindex="-1">
+			<div class="item" data-value="Male">Male</div>
+			<div class="item" data-value="Female">Female</div>
+		</div>
+	</div>
+
+	<!-- Dropdown Four -->
+
+	<div class="fluid selection dropdown">
+		<input type="hidden" name="gender">
+		<i class="fas fa-caret-down dropdown icon"></i>
+		<div class="default text">Gender</div>
+		<div class="menu">
+			<div class="item" data-value="Male">Male</div>
+			<div class="item" data-value="Female">Female</div>
+		</div>
+	</div>
+
+</body>
+</html>

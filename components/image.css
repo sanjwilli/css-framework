@@ -1,0 +1,202 @@
+/* 	
+	=========================
+	|						|
+	| 	Images Styling		|
+	|						|
+	=========================
+*/
+
+img {
+	border-style: none;
+}
+
+/* === Image === */
+
+.image {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	max-width: 100%;
+}
+
+img.image {
+	display: block;
+}
+
+.image svg, .image img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+/* === Image Variations === */
+
+
+/* --- Inline --- */
+
+.inline.image, .inline.image svg, .inline.image img {
+	display: inline-block;
+}
+
+/* --- Vertical Aligned --- */
+
+.top.align.images .image, .top.align.image, .top.align.image svg, .top.align.image img {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.middle.align.images .image, .middle.align.image, .middle.align.image svg, .middle.align.image img {
+	display: block;
+	vertical-align: middle;
+}
+
+.bottom.align.images .image, .bottom.align.image, .bottom.align.image svg, .bottom.align.image img {
+	display: inline-block;
+	vertical-align: bottom;
+}
+
+/* --- Rounded Edges --- */
+
+.round.images .image, .round.image, .round.images .image > *, .round.image > * {
+	border-radius: 0.3125em;
+}
+
+/* --- Border --- */
+
+.border.images .image, .border.images img, .border.images svg, .border.image img, .border.image svg, img.border.image {
+	border: 1px solid rgba(0,0,0,0.1);
+}
+
+/* --- Circular --- */
+
+.circular.images, .circular.image {
+	overflow: hidden;
+}
+
+.circular.images .image, .circular.image, .circular.images .image > *, .circular.image > * {
+	border-radius: 500rem;
+}
+
+/* --- Fluid --- */
+
+.fuild.images, .fuild.image, .fuild.images img, .fuild.images svg, .fuild.image img, .fuild.image svg {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+/* --- Avatar --- */
+
+.avatar.images .image, .avatar.images img, .avatar.images svg, .avatar.image img, .avatar.image svg, .avatar.image {
+	margin-right: 0.25em;
+	display: inline-block;
+	width: 2em;
+	height: 2em;
+	border-radius: 500rem;
+}
+
+/* --- Spaced --- */
+
+.spaced.image {
+	display: inline-block !important;
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+}
+
+[class*="left spaced"].image {
+	margin-left: 0.5em;
+	margin-right: 0em;
+}
+
+[class*="right spaced"].image {
+	margin-left: 0em;
+	margin-right: 0.5em;
+}
+
+/* --- Floated --- */
+
+.float.image, .float.images {
+	float: left;
+	margin-right: 1em;
+	margin-bottom: 1em;
+}
+
+.right.float.image, .right.float.images {
+	float: right;
+	margin-right: 0em;
+	margin-bottom: 1em;
+	margin-left: 1em;
+}
+
+.float.image:last-child, .float.images:last-child {
+	margin-bottom: 0em;
+}
+
+/* --- Center --- */
+
+.centered.images, .centered.image {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* --- Sizes --- */
+
+.mini.images .image, .mini.images img, .mini.images svg, .mini.image img, .mini.image svg, .mini.image {
+	width: 35px;
+	height: auto;
+	font-size: 0.78571429rem;
+}
+
+.tiny.images .image, .tiny.images img, .tiny.images svg, .tiny.image img, .tiny.image svg, .tiny.image {
+	width: 80px;
+	height: auto;
+	font-size: 0.85714286rem;
+}
+
+.small.images .image, .small.images img, .small.images svg, .small.image img, .small.image svg, .small.image {
+	width: 150px;
+	height: auto;
+	font-size: 0.92857143rem;
+}
+
+.medium.images .image, .medium.images img, .medium.images svg, .medium.image img, .medium.image svg, .medium.image {
+	width: 300px;
+	height: auto;
+	font-size: 1rem;
+}
+
+.large.images .image, .large.images img, .large.images svg, .large.image img, .large.image svg, .large.image {
+	width: 450px;
+	height: auto;
+	font-size: 1.14285714rem;
+}
+
+.big.images .image, .big.images img, .big.images svg, .big.image img, .big.image svg, .big.image {
+	width: 600px;
+	height: auto;
+	font-size: 1.28571429rem;
+}
+
+.huge.images .image, .huge.images img, .huge.images svg, .huge.image img, .huge.image svg, .huge.image {
+	width: 800px;
+	height: auto;
+	font: 1.42857143rem;
+}
+
+.massive.images .image, .massive.images img, .massive.images svg, .massive.image img, .massive.image svg, .massive.image{
+	width: 960px;
+	height: auto;
+	font-size: 1.71426571rem;
+}
+
+/* === Group == */
+
+.images {
+	font-size: 0em;
+	margin-left: 0em -0.25rem 0rem;
+}
+
+.images .image, .images > img, .images > svg {
+	display: inline-block;
+	margin: 0em 0.25rem 0.5rem;
+}
