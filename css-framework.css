@@ -76,3 +76,7 @@ b, strong {
 small {
 	font-size: 80%;
 }
+
+.show {
+	display: block !important;
+}

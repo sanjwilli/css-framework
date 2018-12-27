@@ -757,6 +757,73 @@ select.dropdown {
 	right: auto !important;
 }
 
+/* --- Upward --- */
+
+/* -- Upward Main Menu --*/
+
+.upward.dropdown > .menu {
+	top: auto;
+	bottom: 100%;
+	-webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.08);
+	box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.08);
+	border-radius: 0.28571429rem 0.28571429rem 0em 0em;
+}
+
+/* -- Upward Sub Menu -- */
+
+.dropdown .upward.menu {
+	top: auto !important;
+	bottom: 0 !important;
+}
+
+/* -- Active Upward -- */
+
+.simple.upward.active.dropdown, .simple.upward.dropdown:hover {
+	border-radius: 0.28571429rem 0.28571429rem 0em 0em !important;
+}
+
+.upward.dropdown.button:not(.pointing):not(.floating).active {
+	border-radius: 0.28571429rem 0.28571429rem 0em 0em;
+}
+
+/* -- Selection -- */
+
+.upward.selection.dropdown .menu {
+	border-top-width: 1px !important;
+	border-bottom-width: 0px !important;
+	-webkit-box-shadow: 0px -2px 3px 0px rgba(0,0,0,0.08);
+	box-shadow: 0px -2px 3px 0px rgba(0,0,0,0.08);
+
+}
+
+.upward.selection.dropdown:hover {
+	-webkit-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.05);
+	box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.05);
+}
+
+/* -- Active Upward -- */
+
+.active.upward.selection.dropdown {
+	border-radius: 0em 0em 0.28571429rem 0.28571429rem !important
+}
+
+/* -- Visible Upward -- */
+
+.upward.selection.dropdown.visible {
+	-webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.08);
+	box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.08);
+	border-radius: 0em 0em 0.28571429rem 0.28571429rem !important;
+}
+
+.upward.active.selection.dropdown:hover {
+	-webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.05);
+	box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.05);
+}
+
+.upward.active.selection.dropdown:hover .menu {
+	-webkit-box-shadow: 0px -2px 3px 0px rgba(0,0,0,0.08);
+	box-shadow: 0px -2px 3px 0px rgba(0,0,0,0.08);
+}
 /* --- Scrolling --- */
 
 .scrolling.dropdown .menu, .dropdown .scrolling.menu {
