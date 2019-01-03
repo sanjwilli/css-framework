@@ -89,11 +89,15 @@
 	box-shadow: 0em 0em 0em 0em transparent inset;
 	-webkit-transition: color 0.1s ease, border-color 0.1s ease;
 	transition: color 0.1s ease, border-color 0.1s ease;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
 }
 
 /* Text Area */
 
 .form textarea {
+	font-family: 'Athiti', Arial, Helvetica, sans-serif;
 	margin: 0em;
 	-webkit-appearance: none;
 	tap-highlight-color: rgba(255,255,255,0);
@@ -112,6 +116,9 @@
 	font-size: 1em;
 	line-height: 1.2857;
 	resize: vertical;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
 }
 
 .form textarea:not([rows]) {
@@ -248,8 +255,8 @@
 .form input[type="file"]:focus,
 .form input[type="url"]:focus {
 	color: rgba(0,0,0,0.95);
-	border: 1.5px solid;
-	border-color: #85b7d9;
+	border: .8px solid;
+	border-color: #89ecda;
 	border-radius: 1.28571429rem;
 	background: #f8f8fa;
 	-webkit-box-shadow: 0px 0em 0em 0em rgba(34, 36, 38, 0.35);
@@ -263,8 +270,8 @@
 
 .form textarea:focus {
 	color: rgba(0,0,0,0.95);
-	border: 1.5px solid;
-	border-color: #85b7d9;
+	border: .8px solid;
+	border-color: #89ecda;
 	border-radius: 1.28571429rem;
 	background: #f8f8fa;
 	-webkit-box-shadow: 0px 0em 0em 0em rgba(34, 36, 38, 0.35);

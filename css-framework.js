@@ -35,9 +35,25 @@ $(document).ready(function (){
 
 		$(dropDown).find('.menu').first().toggleClass('show').toggleClass('visible hidden');
 
-		// console.log(dropDownTop);
-		// console.log(abovePage);
+
 	});
+
+	$('.selection.dropdown .item').click(function(){
+
+		var
+
+			select = this,
+			selected = $(this).data('value')
+
+		;
+
+		var text = $(select).prevUntil('.text');
+
+		if($(text).hasClass('.default')) {
+			alert("found it");
+		}
+
+	})
 
 	function inViewport(element) {
 
