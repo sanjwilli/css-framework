@@ -43,17 +43,48 @@ $(document).ready(function (){
 		var
 
 			select = this,
-			selected = $(this).data('value')
+			selected = $(this).data('value'),
+			displayFind = $(this).parent().parent(),
+			input = displayFind.find('input'),
+			display = displayFind.find('.text')
 
 		;
 
-		var text = $(select).prevUntil('.text');
+		if(display.hasClass('default')) {
 
-		if($(text).hasClass('.default')) {
-			alert("found it");
+			console.log('Im in');
+
+			display.removeClass('default');
+
 		}
 
-	})
+		display.html(selected);
+		input.val(selected)
+
+	});
+
+	/*function selectedDisplay(element, selected) {
+
+
+		if(element.hasClass('.text')) {
+
+			if(element.hasClass('.default')) {
+
+				element.removeClass('.default');
+
+				console.log(selected);
+			}
+
+		} else if(element.hasClass('.selection') && element.hasClass('.dropdown')) {
+
+			console.log("Error");
+
+		} else {
+
+			selectedDisplay(element.prev(), $(selected));
+		}
+
+	} */
 
 	function inViewport(element) {
 

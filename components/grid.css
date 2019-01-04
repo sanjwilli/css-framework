@@ -42,3 +42,314 @@
 .grid + .grid {
 	margin-top: 1rem;
 }
+
+/* --- Colums --- */
+
+/* Standard 16 column */
+.grid > .column:not(.row), .grid > .row > .column {
+	position: relative;
+	display: inline-block;
+	width: 6.25%;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	vertical-align: top;
+}
+
+.grid > * {
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+/* --- Rows --- */
+
+.grid > .row {
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-pack: inherit;
+	-ms-flex-pack: inherit;
+	justify-content: inherit;
+	-webkit-box-align: stretch;
+	-ms-flex-align: stretch;
+	align-items: stretch;
+	width: 100% !important;
+	padding: 0rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+/* --- Columns --- */
+
+/* Vertical padding when there is no rows */
+.grid > .column:not(.row) {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+.grid > .row > .column {
+	margin-top: 0em;
+	margin-bottom: 0em;
+}
+
+/* --- Content --- */
+
+.grid > .row > img, .grid > .row > .column > img {
+	max-width: 100%;
+}
+
+/* --- Loose Coupling --- */
+
+/* Collapse Margin on Consecutive Grid */
+.grid > .grid:first-child {
+	margin-top: 0em;
+}
+
+.grid > .grid:last-child {
+	margin-bottom: 0em;
+}
+
+/* Segment inside Aligned Grid */
+.grid .aligned.row > .column > .segment:not(.compact):not(.attached),
+.aligned.grid .column > .segment:not(.compact):not(.attached) {
+	width: 100%;
+}
+/* Align Dividers with Gutter */
+.grid .row + .divider {
+	-webkit-box-flex: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+	margin: 1rem 1rem;
+}
+
+.grid .column + .vertical.divider {
+	height: calc(50% - (2rem /2));
+}
+
+/* Remove Border on Last Horizontal Segment */
+.grid > .row > .column:last-child > .horizontal.segment,
+.grid > .column:last-child > .horizontal.segment {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+/* --- Variations --- */
+
+/* -- Page Grid -- */
+
+@media only screen and (max-width: 767px) {
+	.page.grid {
+		width: auto;
+		padding-left: 0em;
+		padding-right: 0em;
+		margin-left: 0em;
+		margin-right: 0em;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.page.grid {
+		width: auto;
+		margin-left: 0em;
+		margin-right: 0em;
+		padding-left: 2em;
+		padding-right: 2em;
+	}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.page.grid {
+		width: auto;
+		margin-left: 0em;
+		margin-right: 0em;
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1919px) {
+	.page.grid {
+		width: auto;
+		margin-left: 0em;
+		margin-right: 0em;
+		padding-left: 15%;
+		padding-right: 15%;
+	}
+}
+
+@media only screen and (min-width: 1920px) {
+	.page.grid {
+		width: auto;
+		margin-left: 0em;
+		margin-right: 0em;
+		padding-left: 23%;
+		padding-right: 23%;
+	}
+}
+
+/* -- Column Count -- */
+
+/* Assume full width with one column */
+.grid > .column:only-child, .grid > .row > .column:only-child {
+	width: 100%;
+}
+
+/* Grid Based */
+[class*="one column"].grid > .row > .column,
+[class*="one column"].grid > .column:not(.row) {
+	width: 100%;
+}
+
+[class*="two column"].grid > .row > .column,
+[class*="two column"].grid > .column:not(.row) {
+	width: 50%;
+}
+
+[class*="three column"].grid > .row > .column,
+[class*="three column"].grid > .column:not(.row) {
+	width: 33.33333333%;
+}
+
+[class*="four column"].grid > .row > .column,
+[class*="four column"].grid > .column:not(.row) {
+	width: 25%;
+}
+
+[class*="five column"].grid > .row > .column,
+[class*="five column"].grid > .column:not(.row) {
+	width: 20%;
+}
+
+[class*="six column"].grid > .row > .column,
+[class*="six column"].grid > .column:not(.row) {
+	width: 16.66666667%;
+}
+
+[class*="seven column"].grid > .row > .column,
+[class*="seven column"].grid > .column:not(.row) {
+	width: 14.28571429%;
+}
+
+[class*="eight column"].grid > .row > .column,
+[class*="eight column"].grid > .column:not(.row) {
+	width: 12.5%;
+}
+
+[class*="nine column"].grid > .row > .column,
+[class*="nine column"].grid > .column:not(.row) {
+	width: 11.11111111%;
+}
+
+[class*="ten column"].grid > .row > .column,
+[class*="ten column"].grid > .column:not(.row) {
+	width: 10%;
+}
+
+[class*="eleven column"].grid > .row > .column,
+[class*="eleven column"].grid > .column:not(.row) {
+	width: 9.09090909%;
+}
+
+[class*="twelve column"].grid > .row > .column,
+[class*="twelve column"].grid > .column:not(.row) {
+	width: 8.33333333%;
+}
+
+[class*="thirteen column"].grid > .row > .column,
+[class*="thirteen column"].grid > .column:not(.row) {
+	width: 7.69230769%;
+}
+
+[class*="fourteen column"].grid > .row > .column,
+[class*="fourteen column"].grid > .column:not(.row) {
+	width: 7.14285714%;
+}
+
+[class*="fifteen column"].grid > .row > .column,
+[class*="fifteen column"].grid > .column:not(.row) {
+	width: 6.66666667%;
+}
+
+[class*="sixteen column"].grid > .row > .column,
+[class*="sixteen column"].grid > .column:not(.row) {
+	width: 6.25%;
+}
+
+/* Row Based Overrides */
+.grid > [class*="one column"].row > .column {
+	width: 100% !important;
+}
+
+.grid > [class*="two column"].row > .column {
+	width: 50% !important;
+}
+
+.grid > [class*="three column"].row > .column {
+	width: 33.33333333% !important;
+}
+
+.grid > [class*="four column"].row > .column {
+	width: 25% !important;
+}
+
+.grid > [class*="five column"].row > .column {
+	width: 20% !important;
+}
+
+.grid > [class*="six column"].row > .column {
+	width: 16.66666667% !important;
+}
+
+.grid > [class*="seven column"].row > .column {
+	width: 14.28571429% !important;
+}
+
+.grid > [class*="eight column"].row > .column {
+	width: 12.5% !important;
+}
+
+.grid > [class*="nine column"].row > .column {
+	width: 11.11111111% !important;
+}
+
+.grid > [class*="ten column"].row > .column {
+	width: 10% !important;
+}
+
+.grid > [class*="eleven column"].row > .column {
+	width: 9.09090909% !important;
+}
+
+.grid > [class*="twelve column"].row > .column {
+	width: 8.33333333% !important;
+}
+
+.grid > [class*="thirteen column"].row > .column {
+	width: 7.69230769% !important;
+}
+
+.grid > [class*="fourteen column"].row > .column {
+	width: 7.14285714% !important;
+}
+
+.grid > [class*="fiveteen column"].row > .column {
+	width: 6.6666667% !important;
+}
+
+.grid > [class*="sixteen column"].row > .column {
+	width: 6.25% !important;
+}
+
+/* Celled Page */
+.celled.page.grid {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+/* -- Column Width -- */
