@@ -1,0 +1,122 @@
+/* 	
+	=========================
+	|						|
+	| 	Table Styling		|
+	|						|
+	=========================
+*/
+
+.table {
+	width: 100%;
+	background: #ffffff;
+	margin: 1em 0em;
+	border: 1px solid rgba(34, 36, 38, 0.15);
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border-radius: 0.28571429rem;
+	text-align: left;
+	color: rgba(0,0,0,0.87);
+	border-collapse: separate;
+	border-spacing: 0px;
+}
+
+.table:first-child {
+	margin-top: 0em;
+}
+
+.table:last-child {
+	margin-bottom: 0em;
+}
+
+/* --- Parts --- */
+.table th,
+.table td {
+	-webkit-transition: background 0.1s ease, color 0.1s ease;
+	transition: background 0.1s ease, color 0.1s ease;
+}
+
+.table thead {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.table thead th {
+	cursor: auto;
+	background: #f9fafb;
+	text-align: inherit;
+	color: rgba(0,0,0,0.87);
+	padding: 0.92857143em 0.78571429em;
+	vertical-align: inherit;
+	font-style: none;
+	font-weight: bold;
+	text-transform: none;
+	border-bottom: 1px solid rgba(34, 36, 38, 0.1);
+	border-left: none;
+}
+
+.table thead tr > th:first-child {
+	border-left: none;
+}
+
+.table thead tr:first-child > th:first-child {
+	border-radius: 0.28571429rem 0em 0em 0em;
+}
+
+.table thead tr:first-child > th:last-child {
+	border-radius: 0em 0.28571429rem 0em 0em;
+}
+
+.table thead tr:first-child > th:only-child {
+	border-radius: 0.28571429rem 0.28571429rem 0em 0em;
+}
+
+/* Footer */
+.table tfoot {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.table tfoot th {
+	cursor: auto;
+	border-top: 1px solid rgba(34, 36, 38, 0.15);
+	background: #f9fafb;
+	text-align: inherit;
+	color: rgba(0,0,0,0.87);
+	padding: 0.78571429em 0.78571429em;
+	vertical-align: middle;
+	font-style: normal;
+	font-weight: normal;
+	text-transform: none;
+}
+
+.table tfoot tr > th:first-child {
+	border-left: none;
+}
+
+.table tfoot tr:first-child > th:first-child {
+	border-radius: 0em 0em 0em 0.28571429rem;
+}
+
+.table tfoot tr:first-child > th:last-child {
+	border-radius: 0em 0em 0.28571429rem 0em;
+}
+
+.table tfoot tr:first-child > th:only-child {
+	border-radius: 0em 0em 0.28571429rem 0.28571429rem;
+}
+
+/* Table Row */
+.table tr td {
+	border-top: 1px solid rgba(34, 36, 38, 0.1);
+}
+
+.table tr:first-child td {
+	border-top: none;
+}
+
+/* Repeated tbody */
+.table tbody + tbody tr:first-child td {
+	border-top: 1px solid rgba(34, 36, 38, 0.1);
+}
+
+/* Table Cells */
