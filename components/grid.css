@@ -20,6 +20,7 @@
 	-ms-flex-align: stretch;
 	align-items: stretch;
 	padding: 0em;
+	box-sizing: border-box;
 }
 
 .grid {
