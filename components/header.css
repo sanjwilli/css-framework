@@ -1,0 +1,19 @@
+/* 	
+	=========================
+	|						|
+	| 	Header Styling		|
+	|						|
+	=========================
+*/
+
+
+.header {
+	border: none;
+	margin: calc(2rem - 0.14285714em) 0em 1rem;
+	padding: 0em 0em;
+	font-weight: 'Monsterrat', sans-serif;
+	font-weight: bold;
+	line-height: 1.28571429em;
+	text-transform: none;
+	color: rgba(0,0,0,0.87);
+}
