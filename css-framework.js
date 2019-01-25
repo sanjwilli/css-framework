@@ -125,4 +125,18 @@ $(document).ready(function (){
 
 		$(checkbox).toggleClass('checked');
 	});
+
+	/* 	
+		*********************
+		*					*
+		*		Modal		*
+		*					*
+		*********************
+	*/
+
+	$('#TestModal').click(function(){
+
+		$('.dimmer').removeClass('hidden').addClass('visible active');
+		$('.modal').addClass('visible active');
+	})
 });
