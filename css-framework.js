@@ -136,7 +136,19 @@ $(document).ready(function (){
 
 	$('#TestModal').click(function(){
 
-		$('.dimmer').removeClass('hidden').addClass('visible active');
-		$('.modal').addClass('visible active');
-	})
+		var
+			modal = this
+		;
+
+
+		$('.dimmer').removeClass('hidden').addClass('visible active fade in').css({'animation-duration': '2000ms'}).attr('style', 'display: flex !important;');
+		
+		$('.modal').addClass('visible active scale in').css({'animation-duration': '2000ms'}).attr('style', 'display: block !important;');
+
+		setTimeout(function(){
+			$('.dimmer').removeClass('fade in');
+
+			$('.modal').removeClass('scale in');
+		}, 500);
+	});
 });
