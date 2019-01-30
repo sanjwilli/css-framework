@@ -134,21 +134,53 @@ $(document).ready(function (){
 		*********************
 	*/
 
-	$('#TestModal').click(function(){
+	$('.js-open-modal').click(function(){
 
 		var
 			modal = this
 		;
 
 
-		$('.dimmer').removeClass('hidden').addClass('visible active fade in').css({'animation-duration': '2000ms'}).attr('style', 'display: flex !important;');
+		$('.dimmer').removeClass('hidden').addClass('visible active fade in').attr('style', 'display: flex !important; animation-duration: 500ms;');
 		
-		$('.modal').addClass('visible active scale in').css({'animation-duration': '2000ms'}).attr('style', 'display: block !important;');
+		$('.modal').addClass('visible active scale in').attr('style', 'display: block !important;  animation-duration: 500ms;');
 
 		setTimeout(function(){
-			$('.dimmer').removeClass('fade in');
+			$('.dimmer').removeClass('fade in').attr('style', 'display: flex !important;');
 
-			$('.modal').removeClass('scale in');
+			$('.modal').removeClass('scale in').attr('style', 'display: block !important;');
 		}, 500);
 	});
+
+	$('.js-close-modal').click(function() {
+
+		$('.dimmer').addClass('hidden fade out');
+
+		$('.modal').addClass('scale out')
+
+		// $('.dimmer').addClass('hidden fade out').attr('style', 'animation-duration: 1000ms;').removeClass('visible active').removeAttr('style');
+
+		// $('.modal').addClass('scale out').attr('style', 'animation-duration: 1000ms;').removeClass('visible active').removeAttr('style');
+
+		setTimeout(function(){
+			$('.dimmer').removeClass('visible active fade out').removeAttr('style');
+
+			$('.modal').removeClass('visible active scale out').removeAttr('style');
+		}, 500);
+	});
+
+	// $(document).on('click', function(event) {
+
+	// 	if($('.dimmer').hasClass('visible active')) {
+	// 		if(!$(event.target).closest('.modal').length) {
+	// 			$('body').find('.dimmer').addClass('hidden fade out');
+	// 			$('body').find('.modal').addClass('scale out');
+
+	// 			setTimeout(function(){
+	// 				$('body').find('.dimmer').removeClass('visible active fade out');
+	// 				$('body').find('.modal').removeClass('visible active scale out');
+	// 			});
+	// 		}
+	// 	}
+	// });
 });
