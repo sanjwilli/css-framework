@@ -3,6 +3,15 @@
 });*/
 
 $(document).ready(function (){
+
+	var
+
+		dropdown = 'dropdown',
+		selection = 'selection',
+		checkbox = 'checkbox',
+		modal = 'modal'
+	;
+
 	/* 	
 		*********************
 		*					*
@@ -134,6 +143,8 @@ $(document).ready(function (){
 		*********************
 	*/
 
+	/* -- Modal Open Specific -- */
+
 	$('.js-open-modal').click(function(){
 
 		var
@@ -152,15 +163,13 @@ $(document).ready(function (){
 		}, 500);
 	});
 
+	/* -- Modal Close Specific -- */
+
 	$('.js-close-modal').click(function() {
 
 		$('.dimmer').addClass('hidden fade out');
 
 		$('.modal').addClass('scale out')
-
-		// $('.dimmer').addClass('hidden fade out').attr('style', 'animation-duration: 1000ms;').removeClass('visible active').removeAttr('style');
-
-		// $('.modal').addClass('scale out').attr('style', 'animation-duration: 1000ms;').removeClass('visible active').removeAttr('style');
 
 		setTimeout(function(){
 			$('.dimmer').removeClass('visible active fade out').removeAttr('style');
@@ -169,18 +178,45 @@ $(document).ready(function (){
 		}, 500);
 	});
 
-	// $(document).on('click', function(event) {
+	/* -- Close Modal Outside of Modal -- */
 
-	// 	if($('.dimmer').hasClass('visible active')) {
-	// 		if(!$(event.target).closest('.modal').length) {
-	// 			$('body').find('.dimmer').addClass('hidden fade out');
-	// 			$('body').find('.modal').addClass('scale out');
+	$(document).click(function(e) {
 
-	// 			setTimeout(function(){
-	// 				$('body').find('.dimmer').removeClass('visible active fade out');
-	// 				$('body').find('.modal').removeClass('visible active scale out');
-	// 			});
-	// 		}
-	// 	}
-	// });
+		var
+			element = $(e.target),
+
+			target = $(e.target).prop('class')
+
+		;
+
+		//alert(target);
+		alert(element.is('div'));
+
+		/*if(target.includes(dropdown) && target.includes(selection)) {
+
+		} */
+
+		if(target.includes('modal')) {
+
+			var
+				modal_type = element.data('modalValue')
+			;
+
+			alert(modal_type);
+		}
+
+
+		if(target.includes('dimmer') && target.includes('visible')) {
+
+			$('.dimmer').addClass('hidden fade out');
+
+			$('.modal').addClass('scale out');
+
+			setTimeout(function(){
+				$('.dimmer').removeClass('visible active fade out').removeAttr('style');
+
+				$('.modal').removeClass('visible active scale out').removeAttr('style');
+			}, 500);
+		}
+	});
 });
