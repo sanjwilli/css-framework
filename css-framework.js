@@ -190,7 +190,7 @@ $(document).ready(function (){
 		;
 
 		//alert(target);
-		alert(element.is('div'));
+		//alert(element.is('div'));
 
 		/*if(target.includes(dropdown) && target.includes(selection)) {
 
@@ -202,7 +202,7 @@ $(document).ready(function (){
 				modal_type = element.data('modalValue')
 			;
 
-			alert(modal_type);
+			//alert(modal_type);
 		}
 
 
