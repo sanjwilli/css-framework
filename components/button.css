@@ -1,4 +1,4 @@
-/* 	
+/*
 	=========================
 	|						|
 	| 	Button Styling		|
@@ -551,7 +551,7 @@
 	font-size: 1rem;
 }
 
-.large.buttons. .button, .large.buttons .or, .large.button {
+.large.buttons .button, .large.buttons .or, .large.button {
 	font-size: 1.28571429rem;
 }
 
@@ -672,6 +672,7 @@
 
 .circular.button {
 	border-radius: 10em;
+	width: 43.13px; /* Only her for now */
 }
 
 .circular.button > .icon {

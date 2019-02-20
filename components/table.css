@@ -1,4 +1,4 @@
-/* 	
+/*
 	=========================
 	|						|
 	| 	Table Styling		|
@@ -186,6 +186,7 @@
 		border: none !important;
 		padding: 0.25em 0.75em !important;
 		-webkit-box-shadow: none !important;
+		box-shadow: none !important;
 	}
 
 	.table:not(.unstackable) th:first-child,

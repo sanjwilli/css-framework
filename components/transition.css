@@ -1,4 +1,4 @@
-/* 	
+/*
 	=========================
 	|						|
 	| 		Transition		|
@@ -864,7 +864,7 @@
 	-webkit-animation-duration: 0.6s;
 	animation-duration: 0.6s;
 	-webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-	-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+	transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .transition.fly.in {
@@ -1284,6 +1284,25 @@
 		transform: translate3d(0, 2000px, 0);
 	}
 }
+@keyframes flyOutUp {
+	20% {
+		-webkit-transform: translate3d(0, 10px, 0);
+		transform: translate3d(0, 10px, 0);
+	}
+
+	40%,
+	45% {
+		opacity: 1;
+		-webkit-transform: translate3d(0, -20px, 0);
+		transform: translate3d(0, -20px, 0);
+	}
+
+	100% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, 2000px, 0);
+		transform: translate3d(0, 2000px, 0);
+	}
+}
 
 @-webkit-keyframes flyOutDown {
 	20% {
@@ -1614,7 +1633,7 @@
 
 .transition[class*="swing right"].out {
 	-webkit-animation-name: swingOutY;
-	animation-name-swingOutY;
+	animation-name: swingOutY;
 	-webkit-transform-origin: center left;
 	transform-origin: center left;
 }
