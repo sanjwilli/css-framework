@@ -1,4 +1,4 @@
-/* 	
+/*
 	=========================
 	|						|
 	| 	Form Styling		|
@@ -282,6 +282,16 @@
 	-ms-transition: all 0.2s ease-out;
 	-o-transition: all 0.2s ease-out;
 	transition: all 0.2s ease-out;
+}
+
+/* --- Disabled --- */
+.form .disabled.fields .field, .form .disabled.field, .form .field :disabled {
+	pointer-events: none;
+	opacity: 0.75;
+}
+
+.form .field.disabled :disabled {
+	opacity: 1;
 }
 
 /* --- field Groups --- */

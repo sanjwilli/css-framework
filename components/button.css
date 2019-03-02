@@ -683,7 +683,7 @@
 /* --- Fluid --- */
 
 .fuild.buttons, .fuild.button {
-	width: 100%
+	width: 100%;
 }
 
 .fuild.button {
@@ -691,7 +691,7 @@
 }
 
 .two.buttons {
-	width: 100%
+	width: 100%;
 }
 
 .two.buttons > .button {
@@ -719,7 +719,7 @@
 }
 
 .five.buttons > .button {
-	width: 20%
+	width: 20%;
 }
 
 .six.buttons {

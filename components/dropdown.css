@@ -761,6 +761,13 @@ select.dropdown {
 	right: auto !important;
 }
 
+/* --- Disabled --- */
+.disabled.dropdown, .dropdown .menu > .disabled.item {
+	cursor: default;
+	pointer-events: none;
+	opacity: 0.75;
+}
+
 /* --- Upward --- */
 
 /* -- Upward Main Menu --*/
@@ -782,9 +789,9 @@ select.dropdown {
 
 /* -- Active Upward -- */
 
-.simple.upward.active.dropdown, .simple.upward.dropdown:hover {
+/*.simple.upward.active.dropdown, .simple.upward.dropdown:hover {
 	border-radius: 0.28571429rem 0.28571429rem 0em 0em !important;
-}
+}*/
 
 .upward.dropdown.button:not(.pointing):not(.floating).active {
 	border-radius: 0.28571429rem 0.28571429rem 0em 0em;
