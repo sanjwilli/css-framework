@@ -765,7 +765,7 @@ select.dropdown {
 .disabled.dropdown, .dropdown .menu > .disabled.item {
 	cursor: default;
 	pointer-events: none;
-	opacity: 0.75;
+	opacity: 0.55;
 }
 
 /* --- Upward --- */
