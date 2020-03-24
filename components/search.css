@@ -1,0 +1,47 @@
+/*
+	=========================
+	|						|
+	| 	Navbar Styling	|
+	|						|
+	=========================
+*/
+
+.search {
+  position: relative
+}
+
+.search > .prompt {
+  margin: 0em;
+  outline: none;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: rgba(225, 255, 255, 0);
+  text-shadow: none;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.2142871em;
+  padding: 0.67857143em;
+  font-size: 1em;
+  background: #ffffff;
+  border: 1px solid rgba(34, 36, 38, 0.15);
+  color: rgba(0, 0, 0, 0.87);
+  -webkit-box-shadow: 0em 0em 0em 0em transparent inset;
+  box-shadow: 0em 0em 0em 0em transparent inset;
+  -webkit-transition: background-color 0.1s ease, color 0.1s ease, border-color 0.1s ease, -webkit-box-shadow 0.1s ease;
+  transition: background-color 0.1s ease, color 0.1s ease, border-color 0.1s ease, -webkit-box-shadow 0.1s ease;
+  transition: background-color 0.1s ease, color 0.1s ease, box-shadow 0.1s ease, border-color 0.1s ease;
+  transition: background-color 0.1s ease, color 0.1s ease, box-shadow 0.1s ease, border-color 0.1s ease, -webkit-box-shadow 0.1s ease;
+}
+
+.search .prompt {
+  border-radius: 500rem;
+}
+
+/* --- Icon --- */
+.search .prompt ~ .search.icon {
+  cursor: pointer;
+}
+
+/* --- Results --- */
+.search > .results {
+  
+}

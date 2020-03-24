@@ -1,6 +1,6 @@
 /* import the main font to be used in the framwork */
 
-@import url('https://fonts.googleapis.com/css?family=Athiti|Montserrat|Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Athiti|Lato|Montserrat|Open+Sans');
 
 
 /* --- Components design --- */
@@ -17,8 +17,14 @@
 @import url('components/transition.css');
 @import url('components/breadcrumb.css');
 @import url('components/navbar.css');
+@import url('components/notification.css');
+@import url('components/animations.css');
+@import url('components/loading.css');
 
 /* === Document == */
+* {
+	box-sizing: border-box;
+}
 
 html {
 	line-height: 1.15;
